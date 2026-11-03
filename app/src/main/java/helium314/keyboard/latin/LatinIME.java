@@ -68,7 +68,6 @@ import helium314.keyboard.latin.common.InputPointers;
 import helium314.keyboard.latin.common.ViewOutlineProviderUtilsKt;
 import helium314.keyboard.latin.define.DebugFlags;
 import helium314.keyboard.latin.inputlogic.InputLogic;
-import helium314.keyboard.latin.personalization.PersonalizationHelper;
 import helium314.keyboard.latin.settings.Settings;
 import helium314.keyboard.latin.settings.SettingsValues;
 import helium314.keyboard.latin.suggestions.SuggestionStripView;
@@ -668,11 +667,8 @@ public class LatinIME extends InputMethodService implements
 
     private void refreshPersonalizationDictionarySession(
             final SettingsValues currentSettingsValues) {
-        if (!currentSettingsValues.mUsePersonalizedDicts) {
-            // Remove user history dictionaries.
-            PersonalizationHelper.removeAllUserHistoryDictionaries(this);
-            mDictionaryFacilitator.clearUserHistoryDictionary(this);
-        }
+        // Turning personalized suggestions off only disables use of learned data.
+        // Keep the history on-device so changing this setting never erases learning.
     }
 
     // Note that this method is called from a non-UI thread.

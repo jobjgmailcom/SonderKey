@@ -57,6 +57,7 @@ class DictionaryHeader(
         const val MAX_BIGRAM_COUNT_KEY = "MAX_BIGRAM_ENTRY_COUNT"
         const val MAX_TRIGRAM_COUNT_KEY = "MAX_TRIGRAM_ENTRY_COUNT"
         const val ATTRIBUTE_VALUE_TRUE = "1"
+        const val ATTRIBUTE_VALUE_FALSE = "0"
         const val CODE_POINT_TABLE_KEY = "codePointTable"
     }
 }
