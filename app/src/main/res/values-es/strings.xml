@@ -254,8 +254,6 @@
     <string name="select_color_accent">Acento</string>
     <string name="center_suggestion_text_to_enter">Usar siempre la sugerencia central</string>
     <string name="center_suggestion_text_to_enter_summary">Al pulsar espacio o un signo de puntuación, se insertará la sugerencia central</string>
-    <string name="bigram_prediction">Sugerencias de la siguiente palabra</string>
-    <string name="bigram_prediction_summary">Usar la palabra anterior para sugerir la siguiente</string>
     <string name="prioritize_personal_suggestions">Priorizar palabras personales y aprendidas</string>
     <string name="prioritize_personal_suggestions_summary">Dar mayor prioridad a las palabras personales y aprendidas al predecir la siguiente palabra</string>
     <string name="next_word_boost_level">Nivel de refuerzo de palabras aprendidas</string>
